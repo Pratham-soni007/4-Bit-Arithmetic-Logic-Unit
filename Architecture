@@ -7,3 +7,11 @@
 │   ├── waveforms/          # Simulation waveforms
 │   └── block_diagram.png   # Architecture diagram
 └── README.md
+        +------------------+
+        |                  |
+   A -->|                  |
+   B -->|     4-bit ALU    |--> Result [3:0]
+ SEL -->|                  |--> Zero Flag
+        |                  |--> Carry Flag
+        |                  |--> Overflow Flag
+        +------------------+
